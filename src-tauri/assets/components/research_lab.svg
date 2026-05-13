@@ -1,0 +1,19 @@
+<svg viewBox="0 0 260 260" width="260" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="#FF1493" stroke-width="2" filter="url(#glow)">
+    <rect x="10" y="10" width="240" height="240" rx="15"/>
+    <ellipse cx="130" cy="130" rx="80" ry="30" transform="rotate(45 130 130)" stroke-width="3" />
+    <ellipse cx="130" cy="130" rx="80" ry="30" transform="rotate(-45 130 130)" stroke-width="3" />
+    <circle cx="130" cy="130" r="15" fill="#FF1493" />
+    <circle cx="130" cy="130" r="100" stroke-dasharray="15 10" opacity="0.5" />
+    <text x="130" y="240" fill="#FF1493" stroke="none" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">RESEARCH LAB</text>
+  </g>
+</svg>

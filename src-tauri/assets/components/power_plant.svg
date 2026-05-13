@@ -1,0 +1,19 @@
+<svg viewBox="0 0 220 220" width="220" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="#8A2BE2" stroke-width="2" filter="url(#glow)">
+    <rect x="10" y="10" width="200" height="200" rx="20"/>
+    <circle cx="110" cy="110" r="70" stroke-dasharray="10 5" stroke-width="3" />
+    <circle cx="110" cy="110" r="50" fill="rgba(138, 43, 226, 0.3)" />
+    <path d="M 110 50 L 110 170 M 50 110 L 170 110 M 67.5 67.5 L 152.5 152.5 M 67.5 152.5 L 152.5 67.5" stroke-width="4" stroke-opacity="0.5"/>
+    <circle cx="110" cy="110" r="20" fill="#8A2BE2" />
+    <text x="110" y="200" fill="#8A2BE2" stroke="none" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">POWER PLANT</text>
+  </g>
+</svg>

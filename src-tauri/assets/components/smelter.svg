@@ -1,0 +1,19 @@
+<svg viewBox="0 0 180 180" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke="#FF3333" stroke-width="2" filter="url(#glow)">
+    <rect x="10" y="10" width="160" height="160" rx="12"/>
+    <circle cx="90" cy="90" r="50" stroke-width="3" />
+    <circle cx="90" cy="90" r="30" fill="rgba(255, 51, 51, 0.3)" />
+    <path d="M 90 40 L 90 10 M 90 140 L 90 170 M 40 90 L 10 90 M 140 90 L 170 90" stroke-dasharray="4 4" />
+    <path d="M 55 55 L 25 25 M 125 125 L 155 155 M 55 125 L 25 155 M 125 55 L 155 25" stroke-dasharray="4 4" />
+    <text x="90" y="160" fill="#FF3333" stroke="none" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">SMELTER</text>
+  </g>
+</svg>

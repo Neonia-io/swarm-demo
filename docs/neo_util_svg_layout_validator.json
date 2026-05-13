@@ -1,0 +1,56 @@
+{
+  "name": "neo_util_svg_layout_validator",
+  "version": "1.0.0",
+  "price": "$0.002 / call",
+  "tier": "Standard Tier",
+  "url_path": "/tools/neo_util_svg_layout_validator",
+  "human_description": "A spatial layout placement validator for checking component bounding box collisions on a 2D canvas.",
+  "example_input": "{\n  \"components\": [\n    { \"component_id\": \"c1\", \"x\": 10, \"y\": 10, \"width\": 50, \"height\": 50, \"allow_overlap\": false },\n    { \"component_id\": \"c2\", \"x\": 30, \"y\": 30, \"width\": 20, \"height\": 20, \"allow_overlap\": false }\n  ]\n}",
+  "short_description": "A strict layout placement collision detector.",
+  "description": "COMPUTE-ONLY: A spatial layout placement validator for SVG workflows. Use this tool when arranging multiple vector components on a canvas. It detects spatial bounding-box collisions between components to ensure proper physical assembly or layout rendering.",
+  "example_output": "{\n  \"is_valid\": false,\n  \"errors\": [\n    \"Spatial collision detected between 'c1' and 'c2'.\"\n  ],\n  \"warnings\": []\n}",
+  "mcp_schema": {
+    "type": "object",
+    "properties": {
+      "components": {
+        "type": "array",
+        "description": "Array of components to check for spatial collisions.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "component_id": {
+              "type": "string"
+            },
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "width": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
+            },
+            "allow_overlap": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "component_id",
+            "x",
+            "y",
+            "width",
+            "height",
+            "allow_overlap"
+          ]
+        }
+      }
+    },
+    "required": [
+      "components"
+    ]
+  },
+  "updated": "May 11, 2026"
+}
