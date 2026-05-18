@@ -16,6 +16,3 @@ gloo-timers = { version = "0.4.0", features = ["futures"] }
 
 [workspace]
 members = ["src-tauri"]
-
-[patch.crates-io]
-rig-core = { path = "../agentic-svg-factory/rig-core-patched" }

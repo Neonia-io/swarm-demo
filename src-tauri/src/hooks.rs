@@ -46,10 +46,10 @@ impl<M: CompletionModel> PromptHook<M> for DemoHook {
             "neo_util_svg_validator" => {
                 self.emit("tool_call", "Running deterministic geometric validation...");
             }
-            "neo_sys_memory_lesson" => {
+            "neonia_sys_memory_lesson" => {
                 self.emit("tool_call", "Writing Architectural Lesson to Swarm Memory...");
             }
-            "neo_sys_memory_search" => {
+            "neonia_sys_memory_search" => {
                 self.emit("tool_call", "Searching Global Hive-Mind for geometric patterns...");
             }
             _ => {
@@ -81,7 +81,7 @@ impl<M: CompletionModel> PromptHook<M> for DemoHook {
                 self.emit_reasoning("[Action] 🔌 Routing optimal path...");
                 self.emit("tool_result", "🔌 Path routed.");
             }
-            "neo_sys_memory_lesson" => {
+            "neonia_sys_memory_lesson" => {
                 self.emit("tool_result", "🌐 Lesson propagated to all agents.");
             }
             _ => {}

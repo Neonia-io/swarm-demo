@@ -1,9 +1,9 @@
 [package]
 name = "tauri-app"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-edition = "2021"
+description = "Neonia Swarm Demo App"
+authors = ["Olex Tkachuk"]
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -22,7 +22,7 @@ tauri = { version = "2", features = [] }
 tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-rig-core = { version = "0.36.0", features = ["rmcp"] }
+rig = { package = "rig-core", version = "0.37.0", features = ["rmcp"] }
 tokio = { version = "1.41.0", features = ["macros", "rt-multi-thread", "time", "sync"] }
 reqwest = { version = "0.13.3", features = ["json"] }
 uuid = { version = "1.8", features = ["v4"] }

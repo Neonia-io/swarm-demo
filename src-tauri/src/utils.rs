@@ -8,7 +8,7 @@ pub async fn queue_pop(queue_name: &str, neonia_key: &str, mcp_url: &str) -> Opt
         "id": 1,
         "method": "tools/call",
         "params": {
-            "name": "neo_sys_queue_pop",
+            "name": "neonia_sys_queue_pop",
             "arguments": {
                 "topic": queue_name
             }
